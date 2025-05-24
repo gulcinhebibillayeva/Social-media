@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lesson4_task.Model
+﻿namespace Lesson4_task.Model
 {
     public class Comment:BaseEntity
     {

@@ -38,5 +38,23 @@ namespace Lesson4_task.Services
                 }
             }
         }
+        public User GetUser(Guid userid)
+        {
+            var user= DemirtegramDB.Users.FirstOrDefault(u => u.Id == userid);
+            return user;
+        }
+        public void UpdateUser(User newUser) {
+            var user = DemirtegramDB.Users.FirstOrDefault(u => u.Id == newUser.Id);
+            if (user != null) {
+                user.Name = newUser.Name;
+                user.Surname = newUser.Surname;
+                user.Posts= newUser.Posts;  
+            }
+            else
+            {
+                Console.WriteLine("User tapilmadi");
+            }
+        
+        }
     }
 }

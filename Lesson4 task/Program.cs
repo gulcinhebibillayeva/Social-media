@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Lesson4_task.Model;
 using Lesson4_task.Model.Lesson4_task.Database;
-using Lesson4_task.Model;
 using Lesson4_task.Services;
-
 namespace Lesson4_task
 {
     internal class Program
@@ -67,7 +62,39 @@ namespace Lesson4_task
 
             UserService userService = new UserService();
             userService.GetAllUsers();
-            
+
+
+           Console.WriteLine( "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            User updateUser = new User()
+            {
+                Id = user1.Id,
+                Name= "YeniTest",
+                Surname= " YeniTest",
+                Posts = user1.Posts
+
+            };
+            userService.UpdateUser(updateUser);
+            userService.GetAllUsers();
+
+
+
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Comment UpdateComment = new Comment()
+            {
+                Id = comment1.Id,
+                Text = "Yeni comment",
+                LikeCount = 5
+            };
+            CommentService commentservice= new CommentService();    
+            commentservice.UpdateComment(UpdateComment);
+            Console.WriteLine("Yeni comment1");
+            Console.WriteLine(commentservice.GetCommentById(comment1.Id));
+
         }
-    }
+
+
+
+
+       
+}
 }

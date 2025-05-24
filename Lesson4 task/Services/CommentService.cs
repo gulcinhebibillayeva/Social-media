@@ -30,6 +30,24 @@ namespace Lesson4_task.Services
             }
         }
 
+        public void UpdateComment(Comment NewComment)
+        {
+            var comment = DemirtegramDB.Comments.FirstOrDefault(c => c.Id == NewComment.Id);
+            if (comment != null)
+            {
+                comment.Text = NewComment.Text;
+                comment.LikeCount = NewComment.LikeCount;
+            }
+            else
+            {
+                Console.WriteLine("Bele bir comment tapilmadi");
+            }
+        }
 
+        public Comment GetCommentById(Guid commentId)
+        {
+            var comment = DemirtegramDB.Comments.FirstOrDefault(c => c.Id == commentId);
+            return comment;
+        }
     }
 }
