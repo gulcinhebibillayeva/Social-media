@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Step\c#\Tasks\Lesson4\Lesson4 task\bin\Debug\Lesson4 task.exe.config
+C:\Users\Admin\Desktop\Step\c#\Tasks\Lesson4\Lesson4 task\bin\Debug\Lesson4 task.exe
+C:\Users\Admin\Desktop\Step\c#\Tasks\Lesson4\Lesson4 task\bin\Debug\Lesson4 task.pdb
+C:\Users\Admin\Desktop\Step\c#\Tasks\Lesson4\Lesson4 task\obj\Debug\Lesson4 task.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Step\c#\Tasks\Lesson4\Lesson4 task\obj\Debug\Lesson4 task.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Step\c#\Tasks\Lesson4\Lesson4 task\obj\Debug\Lesson4 task.exe
+C:\Users\Admin\Desktop\Step\c#\Tasks\Lesson4\Lesson4 task\obj\Debug\Lesson4 task.pdb
